@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="letter.css"/>
+    
+</head>
+<body>
+<center>
+<!-- I think there were print and screen rules? 
+I might have to group shift it for the screen and not do that
+for regular viewing.
+-->
+<svg viewBox="0 0 210mm +297mm" version="1.1" width='210mm' height='297mm' xmlns="http://www.w3.org/2000/svg">
+<rect class="always" x='0mm' y='0mm' width='210mm' height='297mm'  /> 
+
+<rect class="show" x='5mm' y='5mm' width='200mm' height='287mm'  /> 
+
+<rect class="show" x='10mm' y='10mm' width='35mm' height='35mm' />
+{% for line in var_dict["lines_from"] %}
+        <text x='11mm' y={{line[0]}}>{{line[1]}}</text>
+{% endfor %}
+
+<rect class="show" x='10mm' y='55mm' width='35mm' height='35mm' />
+
+{% for line in var_dict["lines_to"] %} 
+        <text x='11mm' y={{line[0]}}>{{line[1]}}</text>
+{% endfor %}
+
+
+<rect class="show" x='160mm' y='80mm' width='30mm' height='10mm' />
+
+<text x='162mm' y='85mm'>{{var_dict["date"]}}</text>
+
+<rect class="show" x='10mm' y='95mm' width='180mm' height='10mm' />
+
+<text x='11mm' y='100mm' font-weight="bold">{{var_dict["Betreff"]}} </text>
+<rect class="show" x='10mm' y='111mm' width='180mm' height='10mm' />
+<text x='11mm' y='116mm'>{{var_dict["Anrede"]}}, </text>
+
+{% for par in var_dict["pars"] %} {% for line in par %}
+        <text x='11mm' y={{line[0]}}>{{line[1]}}</text>
+{% endfor %}{% endfor %}
+
+<rect class="show" x='20mm' y='220mm' width='50mm' height='10mm' />
+<text x='21mm' y='225mm'>{{var_dict["Formel"]}} </text>
+<rect class="show" x='30mm' y='235mm' width='50mm' height='10mm' />
+<text x='31mm' y='240mm'>{{var_dict["Name"]}} </text>
+
+
+</svg>
+</center>
+</body>
+</html>
