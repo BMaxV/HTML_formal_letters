@@ -8,6 +8,13 @@ I think this is a good idea, because html is universally supported, easy to unde
 
 It is also extremely flexible in terms of styling and layout.
 
+why not use...
+---------
+
+Latex, I did, then the package I used was discontinued and I couldn't fix my issues.
+
+"Standard Office Software". I don't know about you, but I don't have the time or the patience for their UI, their loadtimes and all that. This script takes like 2 lists and a dict to fill in all the important parts. The positioning is somewhat fixed, but easy to adjust since html uses real measurements like mm.
+
 Here is a letter:
 
 ![See1](./demoletter.jpg)
