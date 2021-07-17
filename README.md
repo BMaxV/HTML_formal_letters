@@ -8,6 +8,18 @@ I think this is a good idea, because html is universally supported, easy to unde
 
 It is also extremely flexible in terms of styling and layout.
 
+Here is a letter:
+
 ![See1](./demoletter.jpg)
 
+Here is a CV:
+
 ![See2](./demoCV.jpg)
+
+
+Other stuff
+=======
+
+If you actually want to print this, I've had problems removing the automatical adjustment for the area printers can't print in.
+
+I'm also open to feedback to improve the style.
